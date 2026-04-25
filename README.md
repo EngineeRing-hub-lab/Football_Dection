@@ -32,28 +32,26 @@ Dự án cung cấp giải pháp nhận diện và theo dõi các đối tượn
 └── README.md               # Hướng dẫn dự án
 ```
 
----
+## 🛠️ Cài đặt & Thiết lập (Installation)
 
-## 🛠️ Cài đặt (Installation)
+Vui lòng chạy các câu lệnh sau để thiết lập môi trường và mã nguồn YOLOv5:
 
-1. **Clone repository:**
-   ```bash
-   git clone [https://github.com/Engineering-hub-lab/Footbal_Dection.git](https://github.com/Engineering-hub-lab/Footbal_Dection.git)
-   cd Footbal_Dection
-   ```
+```bash
+# 1. Cài đặt package ultralytics
+pip install ultralytics
 
-2. **Cài đặt thư viện:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+# 2. Clone mã nguồn YOLOv5 chính thức
+git clone https://github.com/ultralytics/yolov5
 
----
-
+# 3. Truy cập vào thư mục và cài đặt dependencies
+cd yolov5
+pip install -r requirements.txt
+```
 ## 🚀 Hướng dẫn sử dụng
 
 ### 1. Xử lý dữ liệu
-Sử dụng script để tự động trích xuất frame từ video và chuyển đổi label JSON sang định dạng YOLO:
 ```bash
+# Sử dụng script để tự động trích xuất frame từ video và chuyển đổi label JSON sang định dạng YOLO:
 python scripts/convert_yolo.py --input "path/to/raw/data" --output "./data/processed"
 ```
 
@@ -72,7 +70,7 @@ python train.py --weights yolov5s.pt --data data/football.yaml --device cpu
 
 ### 3. Nhận diện (Inference)
 ```bash
-python detect.py --weights path/to/best.pt --source path/to/video.mp4 --device 0
+python detect.py --weights path/to/best.pt --source path/to/video.mp4
 ```
 
 ---
