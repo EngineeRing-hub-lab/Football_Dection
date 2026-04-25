@@ -1,4 +1,4 @@
-# ⚽ Football Detection & Analytics with YOLOv5
+# ⚽ Football Detection with YOLOv5
 
 ![YOLOv5](https://img.shields.io/badge/Model-YOLOv5-orange?style=for-the-badge&logo=pytorch)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python)
@@ -10,9 +10,7 @@ Dự án cung cấp giải pháp nhận diện và theo dõi các đối tượn
 ---
 
 ## 📸 Demo & Visualization
-> *Chèn hình ảnh hoặc GIF kết quả nhận diện của bạn vào đây để tăng sự thu hút!*
-
-![Football Detection Demo](https://via.placeholder.com/800x400.png?text=Show+Your+Awesome+Result+Here)
+![Football Detection Demo](demo/football_demo.gif)
 
 ---
 
